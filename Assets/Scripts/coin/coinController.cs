@@ -8,6 +8,10 @@ public class coinController : MonoBehaviour
         {
             if (collision.CompareTag("Mario"))
             {
+                GameEngine.instance.SumarMonedas();
+                //Destroy(gameObject);
+                //oculatar game object
+               // gameObject.SetActive(false);
                 Debug.Log("Si choco");
             }
         }
