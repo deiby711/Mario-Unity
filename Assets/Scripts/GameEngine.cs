@@ -1,10 +1,12 @@
+using TMPro;
 using UnityEngine;
 
 public class GameEngine : MonoBehaviour
 {
     public  static GameEngine instance;
+    public TMP_Text coinText;
 
-    public  int monedas;
+    public int monedas;
     public int vidas = 5;
     private void Awake()
     {
@@ -35,7 +37,8 @@ public class GameEngine : MonoBehaviour
     public  void SumarMonedas()
     {
         monedas++;
-        Debug.Log(monedas);
+        //Debug.Log(monedas);
+        coinText.text = "Monedas: " + monedas;
     }
 
     public void RestarVidas()
