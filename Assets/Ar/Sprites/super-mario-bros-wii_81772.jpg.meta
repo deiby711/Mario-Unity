@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d72f4e0f2029fcf4d8beab16e6a810f5
+guid: b44c9d8e62080e64eadaf2a5c9addec9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 906388131340123023
-    second: Plant_0
+      213: -1522136766013074375
+    second: super-mario-bros-wii_81772_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,45 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plant_0
+      name: super-mario-bros-wii_81772_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 15
-        height: 24
+        width: 1280
+        height: 960
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8b78250433249c00800000000000000
-      internalID: 906388131340123023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plant_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18d846d3f2de75848b14033215d3458b
-      internalID: 1251757387
+      spriteID: 9349a3a0da840eae0800000000000000
+      internalID: -1522136766013074375
       vertices: []
       indices: 
       edges: []
@@ -160,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7b027fb0867ae8f42813f905ac231365
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -168,12 +146,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Plant_0: 906388131340123023
-      Plant_1: 1251757387
+      super-mario-bros-wii_81772_0: -1522136766013074375
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

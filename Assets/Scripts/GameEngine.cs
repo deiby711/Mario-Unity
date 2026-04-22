@@ -1,23 +1,27 @@
 using TMPro;
+using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class GameEngine : MonoBehaviour
 {
     public  static GameEngine instance;
-    public TMP_Text coinText;
-
     public int monedas;
-    public int vidas = 5;
+    public int vidas = 3;
+    public Canvas canvas;
+
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+            vidas = 3;
         }
         else
         {
             //Destroy(instance);
         }
+        canvas.gameObject.SetActive(false);
     }
     
     
@@ -38,19 +42,27 @@ public class GameEngine : MonoBehaviour
     {
         monedas++;
         //Debug.Log(monedas);
-        coinText.text = "Monedas: " + monedas;
+    
     }
-
     public void RestarVidas()
     {
+        // Restar una vida si hay al menos una disponible.
         if (vidas > 0)
         {
             vidas--;
-            Debug.Log("Vidas restantes: " + vidas);
+        }
 
-            if (vidas == 0)
+        // Asegurarse de que no sea negativo
+        vidas = Mathf.Max(vidas, 0);
+
+        Debug.Log("Vidas restantes: " + vidas);
+
+        if (vidas == 0)
+        {
+            Debug.Log("GAME OVER");
+            if (canvas != null)
             {
-                Debug.Log("GAME OVER");
+                canvas.gameObject.SetActive(true);
             }
         }
     }

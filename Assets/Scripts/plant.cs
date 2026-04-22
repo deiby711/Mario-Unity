@@ -9,12 +9,15 @@ public class plant : MonoBehaviour
     {
         if (yaGolpeo) return;
 
-        if (collision.transform.root.CompareTag("Mario"))
+        bool isPlayer = collision.CompareTag("Mario") 
+                        || collision.CompareTag("Player") 
+                        || collision.GetComponentInParent<MarioControl>() != null;
+
+        if (isPlayer)
         {
             yaGolpeo = true;
-
-            GameEngine.instance.RestarVidas();
-
+            if (GameEngine.instance != null) GameEngine.instance.RestarVidas();
+            else Debug.LogWarning("GameEngine.instance is null");
             Destroy(gameObject);
         }
     }
